@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daouda Sow | Cybersécurité & Systèmes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CANVAS MATRIX BACKGROUND -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- PARTICLES OVERLAY -->
+  <div id="particles"></div>
+
+  <!-- SCAN LINE EFFECT -->
+  <div class="scanlines"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="bracket">[</span>
+      <span class="logo-text">DAOUDA<span class="accent">SOW</span></span>
+      <span class="bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link" data-text="ACCUEIL">ACCUEIL</a></li>
+      <li><a href="#about" class="nav-link" data-text="PROFIL">PROFIL</a></li>
+      <li><a href="#skills" class="nav-link" data-text="SKILLS">SKILLS</a></li>
+      <li><a href="#projects" class="nav-link" data-text="PROJETS">PROJETS</a></li>
+      <li><a href="#contact" class="nav-link" data-text="CONTACT">CONTACT</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">ONLINE</span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="terminal-header">
+        <span class="terminal-dot red"></span>
+        <span class="terminal-dot yellow"></span>
+        <span class="terminal-dot green"></span>
+        <span class="terminal-title">~/cybersec/init.sh</span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line">
+          <span class="prompt">daouda@cyber-lab:~$</span>
+          <span class="command" id="typewriter"></span>
+          <span class="cursor">█</span>
+        </div>
+      </div>
+      <div class="hero-name-wrapper">
+        <div class="glitch-wrapper">
+          <h1 class="glitch" data-text="DAOUDA SOW">DAOUDA SOW</h1>
+        </div>
+        <div class="hero-title">
+          <span class="bracket"><</span>
+          <span class="role" id="role-text">Analyste Cybersécurité</span>
+          <span class="bracket">/></span>
+        </div>
+      </div>
+      <p class="hero-description">
+        Défenseur des infrastructures critiques. Administrateur systèmes. Futur expert en cybersécurité.
+        Diplômé en Techniques de l'informatique et passionné par la santé numérique sécurisée.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <span class="btn-text">VOIR PROJETS</span>
+          <span class="btn-glow"></span>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span class="btn-text">ME CONTACTER</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-count="2">0</span>
+          <span class="stat-label">ANS EXP.</span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat">
+          <span class="stat-number" data-count="5">0</span>
+          <span class="stat-label">PROJETS</span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat">
+          <span class="stat-number" data-count="10">0</span>
+          <span class="stat-label">OUTILS SEC.</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-grid">
+        <div class="hex-ring ring-1"></div>
+        <div class="hex-ring ring-2"></div>
+        <div class="hex-ring ring-3"></div>
+        <div class="center-orb">
+          <div class="orb-inner">
+            <span class="orb-icon">⬡</span>
+          </div>
+        </div>
+      </div>
+      <div class="floating-code">
+        <div class="code-line c1">NMAP SCAN</div>
+        <div class="code-line c2">WIRESHARK</div>
+        <div class="code-line c3">AD / M365</div>
+        <div class="code-line c4">SEC+ PREP</div>
+        <div class="code-line c5">CTF / LAB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about section">
+    <div class="section-header">
+      <div class="section-tag"><section id="about"></div>
+      <h2 class="section-title">PROFIL <span class="accent">SYSTÈME</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-avatar-wrapper">
+        <div class="avatar-frame">
+          <div class="avatar-hex">
+            <div class="avatar-inner">
+              <div class="avatar-icon">
+                <span>DS</span>
+              </div>
+            </div>
+          </div>
+          <div class="avatar-glow-ring"></div>
+          <div class="avatar-scan"></div>
+        </div>
+        <div class="avatar-data">
+          <div class="data-row"><span class="data-key">ID:</span><span class="data-val">DAOUDA_SOW</span></div>
+          <div class="data-row"><span class="data-key">NIVEAU:</span><span class="data-val">JUNIOR</span></div>
+          <div class="data-row"><span class="data-key">STATUT:</span><span class="data-val accent">DISPONIBLE</span></div>
+          <div class="data-row"><span class="data-key">LIEU:</span><span class="data-val">QUÉBEC, CA</span></div>
+          <div class="data-row"><span class="data-key">CERT.:</span><span class="data-val accent">SEC+ EN COURS</span></div>
+        </div>
+      </div>
+      <div class="about-text-wrapper">
+        <div class="about-badge">// À PROPOS</div>
+        <h3 class="about-heading">Technicien Informatique<br/><span class="accent">& Passionné Cybersécurité</span></h3>
+        <p class="about-paragraph">
+          Diplômé du <strong>DEC en Techniques de l'informatique (2025)</strong>, j'ai acquis une expérience 
+          terrain au <strong>CISSS de Chaudière-Appalaches</strong> dans un environnement critique où la 
+          sécurité des données de santé est primordiale.
+        </p>
+        <p class="about-paragraph">
+          Passionné par la défense proactive des systèmes, je prépare activement la certification 
+          <strong>CompTIA Security+</strong> et participe à des compétitions CTF pour renforcer mes compétences 
+          pratiques en cybersécurité offensive et défensive.
+        </p>
+        <p class="about-paragraph">
+          Mon objectif : devenir un expert reconnu en cybersécurité et contribuer à la protection 
+          des infrastructures critiques, notamment dans le domaine de la <strong>santé numérique</strong>.
+        </p>
+        <div class="about-tags">
+          <span class="tag">Cybersécurité</span>
+          <span class="tag">Windows Server</span>
+          <span class="tag">Microsoft 365</span>
+          <span class="tag">Active Directory</span>
+          <span class="tag">Réseaux</span>
+          <span class="tag">Python</span>
+          <span class="tag">CTF Player</span>
+          <span class="tag">CompTIA SEC+</span>
+        </div>
+      </div>
+    </div>
+    <div class="section-footer-tag"></section></div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills section">
+    <div class="section-header">
+      <div class="section-tag"><section id="skills"></div>
+      <h2 class="section-title">CAPACITÉS <span class="accent">SYSTÈME</span></h2>
+    </div>
+    <div class="skills-container">
+      <div class="skills-category">
+        <div class="category-header">
+          <span class="cat-icon">🛡️</span>
+          <h3>CYBERSÉCURITÉ</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-item">
+            <div class="skill-info"><span>Analyse de vulnérabilités</span><span class="skill-pct">72%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Réseaux & Protocoles</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>CTF / Ethical Hacking</span><span class="skill-pct">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>CompTIA Security+</span><span class="skill-pct">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <div class="category-header">
+          <span class="cat-icon">🔧</span>
+          <h3>SYSTÈMES & ADMIN</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-item">
+            <div class="skill-info"><span>Windows Server / AD</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Microsoft 365 Admin</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Support TI N1-N2</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Virtualisation (VMware)</span><span class="skill-pct">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <div class="category-header">
+          <span class="cat-icon">⚡</span>
+          <h3>PROGRAMMATION</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-item">
+            <div class="skill-info"><span>Python</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>PowerShell / Bash</span><span class="skill-pct">72%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>SQL / Bases de données</span><span class="skill-pct">68%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:68%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Java / Web (HTML/CSS/JS)</span><span class="skill-pct">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-footer-tag"></section></div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects section">
+    <div class="section-header">
+      <div class="section-tag"><section id="projects"></div>
+      <h2 class="section-title">PROJETS & <span class="accent">HOMELAB</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icons">
+            <span class="card-icon">🏥</span>
+          </div>
+          <div class="card-links">
+            <a href="#" class="card-link" title="LinkedIn">⬡</a>
+          </div>
+        </div>
+        <div class="card-badge">EXPÉRIENCE TERRAIN</div>
+        <h3 class="card-title">Support TI — CISSS</h3>
+        <p class="card-desc">Support technique niveau 1-2 dans un environnement hospitalier critique. Gestion des incidents, déploiement de postes, administration Active Directory et sensibilisation à la cybersécurité des données de santé.</p>
+        <div class="card-tags">
+          <span>Windows Server</span><span>Active Directory</span><span>M365</span><span>Ticketing</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-stat">📍 Chaudière-Appalaches</span>
+          <span class="card-stat">🏛️ Santé Numérique</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icons"><span class="card-icon">🔬</span></div>
+          <div class="card-links">
+            <a href="#" class="card-link">⬡</a>
+          </div>
+        </div>
+        <h3 class="card-title">Homelab SOC Personnel</h3>
+        <p class="card-desc">Mise en place d'un environnement SIEM domestique (ELK Stack/Wazuh) pour monitorer les logs réseau, détecter les anomalies et simuler des scénarios d'attaques en toute sécurité.</p>
+        <div class="card-tags">
+          <span>Wazuh</span><span>ELK Stack</span><span>Linux</span><span>Proxmox</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-stat">🔧 En construction</span>
+          <span class="card-stat">🏠 Homelab</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icons"><span class="card-icon">⚔️</span></div>
+          <div class="card-links">
+            <a href="https://tryhackme.com" target="_blank" class="card-link">↗</a>
+          </div>
+        </div>
+        <h3 class="card-title">CTF & Compétitions Cyber</h3>
+        <p class="card-desc">Participation à des Capture The Flag et compétitions de cybersécurité. Pratique de l'analyse forensique, exploitation web, cryptographie et reconnaissance réseau dans des environnements simulés.</p>
+        <div class="card-tags">
+          <span>TryHackMe</span><span>Nmap</span><span>Burp Suite</span><span>OSINT</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-stat">🎯 En cours</span>
+          <span class="card-stat">🏆 Compétitions</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icons"><span class="card-icon">🖥️</span></div>
+          <div class="card-links">
+            <a href="#" class="card-link">⬡</a>
+          </div>
+        </div>
+        <h3 class="card-title">Audit de Vulnérabilités Web</h3>
+        <p class="card-desc">Pratique de l'audit de sécurité d'applications web (OWASP Top 10) en environnement contrôlé. Détection d'injections SQL, XSS, CSRF et mauvaises configurations de sécurité.</p>
+        <div class="card-tags">
+          <span>OWASP</span><span>Burp Suite</span><span>DVWA</span><span>Kali Linux</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-stat">🔐 Éthique</span>
+          <span class="card-stat">📚 Apprentissage</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icons"><span class="card-icon">📜</span></div>
+          <div class="card-links">
+            <a href="#" class="card-link">↗</a>
+          </div>
+        </div>
+        <h3 class="card-title">Certification CompTIA Security+</h3>
+        <p class="card-desc">Préparation active à la certification Security+. Étude des domaines : menaces & attaques, architecture sécurisée, implémentation, opérations & réponse aux incidents, gouvernance & conformité.</p>
+        <div class="card-tags">
+          <span>CompTIA</span><span>Security+</span><span>NIST</span><span>ISO 27001</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-stat">📅 Prévue 2025</span>
+          <span class="card-stat">🎓 Certification</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <div class="card-icons"><span class="card-icon">🌐</span></div>
+          <div class="card-links">
+            <a href="#" class="card-link">⬡</a>
+          </div>
+        </div>
+        <h3 class="card-title">Administration Réseau Lab</h3>
+        <p class="card-desc">Configuration et sécurisation d'un réseau virtuel complet : VLAN, pare-feu pfSense, VPN WireGuard, DNS sécurisé et surveillance du trafic via Wireshark et Suricata IDS.</p>
+        <div class="card-tags">
+          <span>pfSense</span><span>VPN</span><span>VLAN</span><span>Suricata</span>
+        </div>
+        <div class="card-footer">
+          <span class="card-stat">🔧 Environnement VM</span>
+          <span class="card-stat">🏠 Homelab</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="section-footer-tag"></section></div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact section">
+    <div class="section-header">
+      <div class="section-tag"><section id="contact"></div>
+      <h2 class="section-title">ÉTABLIR <span class="accent">CONNEXION</span></h2>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="contact-text">
+          <p class="contact-intro">
+            À la recherche d'une opportunité en cybersécurité ou administration systèmes au Québec.
+            Disponible pour un poste junior, un stage ou une collaboration. Le signal est ouvert.
+          </p>
+        </div>
+        <div class="contact-channels">
+          <a href="mailto:daouda.sow@email.com" class="channel-item">
+            <div class="channel-icon">📧</div>
+            <div class="channel-info">
+              <span class="channel-label">EMAIL</span>
+              <span class="channel-value">daouda.sow@email.com</span>
+            </div>
+            <span class="channel-arrow">→</span>
+          </a>
+          <a href="https://linkedin.com/in/daouda-sow" target="_blank" class="channel-item">
+            <div class="channel-icon">💼</div>
+            <div class="channel-info">
+              <span class="channel-label">LINKEDIN</span>
+              <span class="channel-value">in/daouda-sow</span>
+            </div>
+            <span class="channel-arrow">→</span>
+          </a>
+          <a href="https://github.com/daoudasow" target="_blank" class="channel-item">
+            <div class="channel-icon">⬡</div>
+            <div class="channel-info">
+              <span class="channel-label">GITHUB</span>
+              <span class="channel-value">@daoudasow</span>
+            </div>
+            <span class="channel-arrow">→</span>
+          </a>
+          <a href="https://tryhackme.com/p/daouda" target="_blank" class="channel-item">
+            <div class="channel-icon">🛡️</div>
+            <div class="channel-info">
+              <span class="channel-label">TRYHACKME</span>
+              <span class="channel-value">@daouda</span>
+            </div>
+            <span class="channel-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label class="form-label">IDENTIFIANT</label>
+          <input type="text" class="form-input" placeholder="Votre nom..." />
+          <div class="input-glow"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">EMAIL</label>
+          <input type="email" class="form-input" placeholder="votre@email.com" />
+          <div class="input-glow"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">SUJET</label>
+          <input type="text" class="form-input" placeholder="Objet de la mission..." />
+          <div class="input-glow"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">MESSAGE</label>
+          <textarea class="form-input form-textarea" placeholder="Décrivez votre opportunité..."></textarea>
+          <div class="input-glow"></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span class="btn-text">ENVOYER TRANSMISSION</span>
+          <span class="btn-glow"></span>
+        </button>
+      </form>
+    </div>
+    <div class="section-footer-tag"></section></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="bracket">[</span>
+        <span class="logo-text">DAOUDA<span class="accent">SOW</span></span>
+        <span class="bracket">]</span>
+      </div>
+      <div class="footer-text">
+        <span class="footer-copy">© 2025 Daouda Sow — Québec, Canada</span>
+        <span class="footer-sep">|</span>
+        <span class="footer-made">Codé avec ♥ et passion pour la cybersécurité</span>
+      </div>
+      <div class="footer-system">
+        <span class="sys-dot"></span>
+        <span>SYSTEM NOMINAL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
